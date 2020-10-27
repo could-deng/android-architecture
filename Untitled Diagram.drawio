@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-10-24T12:55:31.840Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36" etag="k3r4bCvUATzN7WGSuxsQ" version="13.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-27T01:13:14.428Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36" etag="DyEKL0fEKXytFKcffxCE" version="13.7.5" type="github">
   <diagram id="JkeRft6qGolwoDxWWTEW" name="Page-1">
-    <mxGraphModel dx="1344" dy="843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1239" dy="816" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -148,7 +148,7 @@
         <mxCell id="Ra-KWsMkVuExXTRktj2i-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ra-KWsMkVuExXTRktj2i-37" target="Ra-KWsMkVuExXTRktj2i-39">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ra-KWsMkVuExXTRktj2i-37" value="Mix" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-37" value="Mix&lt;br&gt;（本地伴奏）" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="530" y="70" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Ra-KWsMkVuExXTRktj2i-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ra-KWsMkVuExXTRktj2i-39" target="Ra-KWsMkVuExXTRktj2i-41">
@@ -190,7 +190,7 @@
         <mxCell id="Ra-KWsMkVuExXTRktj2i-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ra-KWsMkVuExXTRktj2i-52" target="Ra-KWsMkVuExXTRktj2i-54">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ra-KWsMkVuExXTRktj2i-52" value="Mix" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-52" value="Mix&lt;br&gt;（AudioMixer）" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="530" y="210" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Ra-KWsMkVuExXTRktj2i-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ra-KWsMkVuExXTRktj2i-54" target="Ra-KWsMkVuExXTRktj2i-56">
@@ -200,7 +200,319 @@
           <mxGeometry x="340" y="210" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Ra-KWsMkVuExXTRktj2i-56" value="Playout" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="150" y="210" width="110" height="60" as="geometry" />
+          <mxGeometry x="20" y="210" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ra-KWsMkVuExXTRktj2i-58" target="Ra-KWsMkVuExXTRktj2i-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-58" value="过滤静音数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ra-KWsMkVuExXTRktj2i-59" target="Ra-KWsMkVuExXTRktj2i-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-59" value="资源帧集合排序" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="1250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-62" value="选取前3进行混合" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-65" value="&lt;span style=&quot;color: rgb(23 , 43 , 77) ; font-family: , , &amp;#34;segoe ui&amp;#34; , &amp;#34;roboto&amp;#34; , &amp;#34;oxygen&amp;#34; , &amp;#34;ubuntu&amp;#34; , &amp;#34;fira sans&amp;#34; , &amp;#34;droid sans&amp;#34; , &amp;#34;helvetica neue&amp;#34; , sans-serif ; font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;按音频能量energy高低排序，该energy字段根据AudioMixerCalculateEnergy()根据n个声轨、m个单音轨采样数下每个采样点的平方和计算而得&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="292.5" y="1130" width="375" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-67" value="&lt;span&gt;Mix&lt;/span&gt;&lt;br&gt;&lt;span&gt;(本地伴音)&lt;/span&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="180" y="180" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ra-KWsMkVuExXTRktj2i-72" target="Ra-KWsMkVuExXTRktj2i-78">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="1950" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="215" y="1825" />
+              <mxPoint x="215" y="1970" />
+              <mxPoint x="683" y="1970" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-96" value="&lt;font color=&quot;#00994d&quot;&gt;4.推混流&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ra-KWsMkVuExXTRktj2i-95">
+          <mxGeometry x="-0.0662" y="2" relative="1" as="geometry">
+            <mxPoint x="56" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-72" value="&lt;span&gt;第一主播&lt;br&gt;&lt;font color=&quot;#00994d&quot;&gt;（3.混流）&lt;/font&gt;&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="235" y="1790" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-73" value="服务器集群" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="445" y="1785" width="145" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-77" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="1810" as="sourcePoint" />
+            <mxPoint x="420" y="1810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-90" value="1.推原始流" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#00994D;" vertex="1" connectable="0" parent="Ra-KWsMkVuExXTRktj2i-77">
+          <mxGeometry x="-0.34" y="1" relative="1" as="geometry">
+            <mxPoint x="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-78" value="CDN" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="610" y="1785" width="145" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-81" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="1830" as="sourcePoint" />
+            <mxPoint x="320" y="1830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-91" value="2.拉多流" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#00994D;" vertex="1" connectable="0" parent="Ra-KWsMkVuExXTRktj2i-81">
+          <mxGeometry x="-0.04" y="-3" relative="1" as="geometry">
+            <mxPoint x="-2" y="33" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-82" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="1850" as="sourcePoint" />
+            <mxPoint x="320" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-83" value="其他主播" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="235" y="1870" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-87" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="322" y="1887" as="sourcePoint" />
+            <mxPoint x="422" y="1887" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-88" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="422" y="1907" as="sourcePoint" />
+            <mxPoint x="322" y="1907" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-89" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="422" y="1927" as="sourcePoint" />
+            <mxPoint x="322" y="1927" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-101" value="&lt;span&gt;主播&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="208" y="2056" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-102" value="服务器集群" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="418" y="2051" width="145" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-103" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="293" y="2076" as="sourcePoint" />
+            <mxPoint x="393" y="2076" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-104" value="1.推原始流" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#00994D;" vertex="1" connectable="0" parent="Ra-KWsMkVuExXTRktj2i-103">
+          <mxGeometry x="-0.34" y="1" relative="1" as="geometry">
+            <mxPoint x="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-105" value="CDN" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="583" y="2051" width="145" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-106" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="743" y="2080" as="sourcePoint" />
+            <mxPoint x="843" y="2080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-109" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="393" y="2096" as="sourcePoint" />
+            <mxPoint x="293" y="2096" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-110" value="2.拉多流" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#00994D;" vertex="1" connectable="0" parent="Ra-KWsMkVuExXTRktj2i-109">
+          <mxGeometry x="-0.04" y="-3" relative="1" as="geometry">
+            <mxPoint x="-5" y="30.5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-111" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="393" y="2116" as="sourcePoint" />
+            <mxPoint x="293" y="2116" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-112" value="主播" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="208" y="2136" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-113" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="295" y="2153" as="sourcePoint" />
+            <mxPoint x="395" y="2153" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-114" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="395" y="2173" as="sourcePoint" />
+            <mxPoint x="295" y="2173" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-115" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="395" y="2193" as="sourcePoint" />
+            <mxPoint x="295" y="2193" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-119" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="2100" as="sourcePoint" />
+            <mxPoint x="840" y="2100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-120" value="1.拉多流" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#00994D;" vertex="1" connectable="0" parent="Ra-KWsMkVuExXTRktj2i-119">
+          <mxGeometry x="0.04" y="-1" relative="1" as="geometry">
+            <mxPoint x="-2" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-121" value="&lt;span&gt;观众&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="860" y="2056" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-122" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="745" y="2158" as="sourcePoint" />
+            <mxPoint x="845" y="2158" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-123" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="742" y="2178" as="sourcePoint" />
+            <mxPoint x="842" y="2178" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-125" value="&lt;span&gt;观众&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="860" y="2136" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-126" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="1824.5" as="sourcePoint" />
+            <mxPoint x="870" y="1824.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-127" value="&lt;font color=&quot;#000000&quot;&gt;拉单流&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#00994D;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="820" y="1840" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-128" value="&lt;span&gt;观众&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="885" y="1790" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-129" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="1894" as="sourcePoint" />
+            <mxPoint x="870" y="1894" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-133" value="&lt;font color=&quot;#000000&quot;&gt;拉单流&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#00994D;" vertex="1" connectable="0" parent="Ra-KWsMkVuExXTRktj2i-129">
+          <mxGeometry x="0.06" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-132" value="&lt;span&gt;观众&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="885" y="1870" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-134" value="" style="endArrow=classic;html=1;dashed=1;fontColor=#00994D;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ra-KWsMkVuExXTRktj2i-102" target="Ra-KWsMkVuExXTRktj2i-105">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="2148.5" as="sourcePoint" />
+            <mxPoint x="600" y="2098.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-144" value="&lt;span&gt;第一主播&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1405" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-145" value="服务器集群" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1400" width="145" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-146" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="445" y="1425" as="sourcePoint" />
+            <mxPoint x="545" y="1425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-147" value="1.推原始流" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#00994D;" vertex="1" connectable="0" parent="Ra-KWsMkVuExXTRktj2i-146">
+          <mxGeometry x="-0.34" y="1" relative="1" as="geometry">
+            <mxPoint x="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-148" value="CDN" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1400" width="145" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-149" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="545" y="1445" as="sourcePoint" />
+            <mxPoint x="445" y="1445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-150" value="2.拉多流" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#00994D;" vertex="1" connectable="0" parent="Ra-KWsMkVuExXTRktj2i-149">
+          <mxGeometry x="-0.04" y="-3" relative="1" as="geometry">
+            <mxPoint x="-2" y="33" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-151" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="545" y="1465" as="sourcePoint" />
+            <mxPoint x="445" y="1465" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-152" value="其他主播" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1485" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-153" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="447" y="1502" as="sourcePoint" />
+            <mxPoint x="547" y="1502" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-154" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="547" y="1522" as="sourcePoint" />
+            <mxPoint x="447" y="1522" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-155" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="547" y="1542" as="sourcePoint" />
+            <mxPoint x="447" y="1542" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-156" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="960" y="1439.5" as="sourcePoint" />
+            <mxPoint x="1060" y="1439.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-157" value="&lt;font color=&quot;#000000&quot;&gt;拉单流&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#00994D;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1010" y="1455" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-158" value="&lt;span&gt;观众&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="1405" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-159" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="960" y="1509" as="sourcePoint" />
+            <mxPoint x="1060" y="1509" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-160" value="&lt;font color=&quot;#000000&quot;&gt;拉单流&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#00994D;" vertex="1" connectable="0" parent="Ra-KWsMkVuExXTRktj2i-159">
+          <mxGeometry x="0.06" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-161" value="&lt;span&gt;观众&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="1485" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-162" value="&lt;font color=&quot;#00994d&quot;&gt;4.推混流&lt;/font&gt;" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="1480" as="sourcePoint" />
+            <mxPoint x="796" y="1480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ra-KWsMkVuExXTRktj2i-163" value="3.混流" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#00994D;" vertex="1" parent="1">
+          <mxGeometry x="607.5" y="1490" width="70" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
